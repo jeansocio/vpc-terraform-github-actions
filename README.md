@@ -1,10 +1,13 @@
 🌐 Terraform VPC Deployment with GitHub Actions
+
 📘 Project Overview
+
 This project walks you through the complete process of deploying a Virtual Private Cloud (VPC) on a cloud provider using Terraform and automating the deployment with GitHub Actions.
 
 By the end of this project, you’ll have your infrastructure as code, stored in GitHub, and automatically deployed every time you push changes. This is a real-world DevOps workflow using modern tools and best practices.
 
 🧱 Project Goals
+
 ✅ Learn how to set up Terraform locally
 
 ✅ Define and deploy a VPC using Terraform
@@ -16,9 +19,7 @@ By the end of this project, you’ll have your infrastructure as code, stored in
 ✅ Store all code and configuration in a GitHub repository
 
 📦 Project Structure
-bash
-Copy
-Edit
+
 .
 ├── main.tf                # Terraform configuration
 ├── variables.tf           # Input variables
@@ -36,9 +37,6 @@ Download Terraform
 
 Verify installation:
 
-bash
-Copy
-Edit
 terraform -version
 ✍️ 2. Writing Terraform Code
 Define your VPC infrastructure in main.tf. This includes:
@@ -56,24 +54,21 @@ Security Groups
 You can customize these resources using input variables from variables.tf.
 
 🚀 3. Initialize & Apply Terraform
+
 Initialize your project:
-bash
-Copy
-Edit
+
 terraform init
 Preview the execution plan:
-bash
-Copy
-Edit
+
 terraform plan
 Apply the configuration:
-bash
-Copy
-Edit
+
 terraform apply
+
 This will provision the VPC in your cloud environment.
 
 📂 4. GitHub Repository Setup
+
 Create a new repository on GitHub. Add essential files:
 
 .gitignore: to exclude Terraform state files, .terraform/, etc.
@@ -83,6 +78,7 @@ README.md: this documentation
 terraform.tfvars: for setting variable values (do not commit sensitive info!)
 
 ⚙️ 5. GitHub Actions Configuration
+
 Set up CI/CD using GitHub Actions in .github/workflows/terraform.yml.
 
 Workflow includes:
@@ -100,17 +96,19 @@ AWS_ACCESS_KEY_ID
 AWS_SECRET_ACCESS_KEY
 
 📤 6. Push to GitHub
+
 Commit your code and push to your GitHub repo:
 
-bash
-Copy
-Edit
 git add .
+
 git commit -m "Initial Terraform VPC setup"
+
 git push origin main
+
 This will trigger the GitHub Actions workflow if configured correctly.
 
 📊 7. Monitor & Verify
+
 Go to the Actions tab in your GitHub repository to:
 
 Monitor your Terraform workflow runs
@@ -122,6 +120,7 @@ Ensure the infrastructure was provisioned successfully
 You can also log in to your cloud provider console (e.g. AWS) to verify that the VPC and associated resources were created.
 
 🧠 Summary
+
 Feature	Status
 Terraform Setup	✅
 VPC Defined	✅
