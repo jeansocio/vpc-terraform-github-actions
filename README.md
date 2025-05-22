@@ -22,14 +22,23 @@ By the end of this project, you’ll have your infrastructure as code, stored in
 
 .
 ├── main.tf                # Terraform configuration
+
 ├── variables.tf           # Input variables
+
 ├── outputs.tf             # Output values
+
 ├── terraform.tfvars       # Variable values
+
 ├── .github/
+
 │   └── workflows/
+
 │       └── terraform.yml  # GitHub Actions workflow
+
 ├── .gitignore
+
 └── README.md
+
 🔧 1. Setting Up Terraform
 Install Terraform on your local machine:
 
@@ -122,13 +131,19 @@ You can also log in to your cloud provider console (e.g. AWS) to verify that the
 🧠 Summary
 
 Feature	Status
+
 Terraform Setup	✅
+
 VPC Defined	✅
+
 GitHub Repo	✅
+
 GitHub Actions CI/CD	✅
+
 Infrastructure Live	✅
 
 🙌 Final Notes
+
 This project simulates a real-world infrastructure deployment pipeline using modern DevOps tools. You now have a solid foundation in:
 
 Terraform syntax and workflow
