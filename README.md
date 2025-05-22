@@ -1,4 +1,4 @@
-🌐 Terraform VPC Deployment with GitHub Actions
+🌐 Terraform VPC Deployment with Terraform and GitHub Actions
 
 📘 Project Overview
 
